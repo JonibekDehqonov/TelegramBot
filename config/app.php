@@ -1,6 +1,15 @@
 <?php
 
 return [
+    'providers' => [
+        // Boshqa provayderlar
+        Telegram\Bot\Laravel\TelegramServiceProvider::class,
+    ],
+
+    'aliases' => [
+        // Boshqa aliaslar
+        'Telegram' => Telegram\Bot\Laravel\Facades\Telegram::class,
+    ],
 
     /*
     |--------------------------------------------------------------------------
